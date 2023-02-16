@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/Kdsingh333/GoLang-Project/server/39-Golang-react-todo-app/router"
-	"github.com/Kdsingh333/GoLang-Project/server/39-Golang-react-todo-app/middleware"
+	
 )
 
 // func init() {

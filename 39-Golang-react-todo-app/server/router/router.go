@@ -9,7 +9,7 @@ import (
 func Router() *mux.Router{
 	router := mux.NewRouter()
 
-	router.HandleFunc("/api/task",middleware.GetAllTasks).Methods("GET","OPTION")
+	router.HandleFunc("/api/task",middleware.GetAllTask).Methods("GET","OPTION")
 	router.HandleFunc("/api/task",middleware.CreateTask).Methods("POST","OPTION")
 	router.HandleFunc("/api/task{id}",middleware.TaskComplete).Methods("PUT","OPTION")
 	router.HandleFunc("/api/undoTask",middleware.UndoTask).Methods("PUT","OPTION")
