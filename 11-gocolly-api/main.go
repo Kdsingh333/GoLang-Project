@@ -10,7 +10,7 @@ import (
 
 func main() {
 	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/{vin}", crawler.CrawlForEngines)
+	router.HandleFunc("/{vin}", crawler.GetEngines).Methods("POST")
 	http.ListenAndServe(":8000", router)
 	fmt.Println("We are up and running. localhost:8000/{vin}")
 }
